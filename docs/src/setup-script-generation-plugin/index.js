@@ -30,7 +30,6 @@ function generateSetupScripts() {
             if (item.features?.includes("keys")) {
               agg.keyboards.push(item);
             } else {
-              item.usb_only = !item.outputs?.includes("ble");
               agg.boards.push(item);
             }
             break;
